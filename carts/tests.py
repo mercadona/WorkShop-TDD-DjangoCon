@@ -30,7 +30,7 @@ def test_adds_product_to_cart_when_product_not_in_cart(client):
 
 
 @pytest.mark.skip
-def test_adds_product_to_cart_when_product_in_cart(client):
+def test_adds_product_units_to_existing_product_in_cart(client):
     CartLine.objects.create(sku="50776", quantity=5)
     # Act (post a quantity to the 50776 sku)
     # Assert (check status_code and response of the new cart state)
