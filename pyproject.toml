@@ -1,3 +1,7 @@
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "ecommerce.settings"
+python_files = ["tests.py", "test_*.py", "*_tests.py"]
+
 [tool.poetry]
 name = "workshop-tdd-django"
 version = "0.1.0"
